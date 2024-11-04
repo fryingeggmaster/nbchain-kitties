@@ -1,0 +1,82 @@
+{
+  "name": "nbchain-kitties",
+  "version": "1。0",
+  "private": true,
+  "author": "NingBo Wang <2536935847@qq.com>",
+  "license": "Unlicense",
+  "homepage": ".",
+  "bugs": {
+    "url": "https://github.com/hqwangningbo/nbchain-kitties/issues"
+  },
+  "keywords": [
+    "substrate",
+    "substrate-ui",
+    "polkadot-js"
+  ],
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "CI=true react-app-rewired test",
+    "eject": "react-scripts eject",
+    "prettier:check": "prettier -c src/*",
+    "prettier:write": "prettier -w src/*",
+    "deploy": "gh-pages -d build -m '[ci skip] Updates'"
+  },
+  "dependencies": {
+    "@polkadot/api": "^7.10.1",
+    "@polkadot/extension-dapp": "^0.42.7",
+    "@polkadot/keyring": "^8.4.1",
+    "@polkadot/networks": "^8.4.1",
+    "@polkadot/types": "^7.10.1",
+    "@polkadot/ui-keyring": "^1.1.1",
+    "@polkadot/ui-settings": "^1.1.1",
+    "@polkadot/react-query": "^0.39.1",
+    "@polkadot/util": "^8.4.1",
+    "@polkadot/util-crypto": "^8.4.1",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "semantic-ui-css": "Semantic-Org/Semantic-UI-CSS#master",
+    "semantic-ui-react": "^2.1.2",
+    "stream-browserify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polkadot/react-query": "^0.39.1",
+    "eslint-config-prettier": "^8.4.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "2.5.1",
+    "react-app-rewired": "^2.2.1",
+    "semistandard": "^16.0.1"
+  },
+  "resolutions": {
+    "eslint-plugin-jsx-a11y": "6.5.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "prettier"
+    ]
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not ie <= 99",
+      "not android <= 4.4.4",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "packageManager": "yarn@3.1.1"
+}
